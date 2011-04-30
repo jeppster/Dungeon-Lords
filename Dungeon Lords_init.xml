@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<moves xml_version="1.2">
+  <action type="quad_tap_name" name="combat1a"></action>
+  <action type="quad_tap_name" name="combat1b"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="89" to_y="64" to_board="3"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="283" to_y="64" to_board="3"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="475" to_y="64" to_board="3"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="668" to_y="64" to_board="3"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="move_piece" x="8" y="7" board="1" to_x="1101" to_y="801" to_board="0"></action>
+  <action type="quad_tap_name" name="event1"></action>
+  <action type="quad_tap_name" name="trap1_0"></action>
+  <action type="quad_tap_name" name="ghost_0"></action>
+  <action type="quad_tap_name" name="ghostYear2"></action>
+  <action type="quad_tap_name" name="room1_1_0"></action>
+  <action type="quad_tap_name" name="room2_1"></action>
+  <action type="quad_tap_name" name="adv1a"></action>
+  <action type="quad_tap_name" name="adv1b"></action>
+</moves>

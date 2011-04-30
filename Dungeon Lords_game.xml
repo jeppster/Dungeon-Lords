@@ -1,0 +1,1768 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game xml_version="1.3">
+  <sides paths="Dungeon Lords_Image_Background.png">
+    <board>Main board</board>
+  </sides>
+  <sides paths="Dungeon Lords_Image_DistantLands.png">
+    <board edge="3" position="0.8">Distant</board>
+  </sides>
+  <sides paths="Dungeon Lords_Image_Progress.png">
+    <board edge="1" position="0.9">Progress</board>
+  </sides>
+  <sides paths="Dungeon Lords_Image_Combat.png">
+    <board edge="1" position="0.8">Combat</board>
+  </sides>
+  <!-- PROGRESS/COMBAT BOARD GENERAL LOCATIONS -->
+  <!-- Progress Token Locations -->
+  <size width="33" height="32">
+    <location_type type="cell">
+      <valid_types types="progress">
+        <corner_coord board="2" x="8" y="75">
+          <location cols="1" rows="1">location_progress_track_1</location>
+        </corner_coord>
+        <corner_coord board="2" x="92" y="75">
+          <location cols="3" rows="1">location_progress_track_2</location>
+        </corner_coord>
+        <corner_coord board="2" x="197" y="75">
+          <location cols="1" rows="1">location_progress_track_3</location>
+        </corner_coord>
+        <corner_coord board="2" x="236" y="75">
+          <location cols="1" rows="1">location_progress_track_4</location>
+        </corner_coord>
+        <corner_coord board="2" x="321" y="75">
+          <location cols="3" rows="1">location_progress_track_5</location>
+        </corner_coord>
+        <corner_coord board="2" x="426" y="75">
+          <location cols="1" rows="1">location_progress_track_6</location>
+        </corner_coord>
+        <corner_coord board="2" x="465" y="75">
+          <location cols="1" rows="1">location_progress_track_7</location>
+        </corner_coord>
+        <corner_coord board="2" x="550" y="75">
+          <location cols="3" rows="1">location_progress_track_8</location>
+        </corner_coord>
+        <corner_coord board="2" x="655" y="75">
+          <location cols="1" rows="1">location_progress_track_9</location>
+        </corner_coord>
+        <corner_coord board="2" x="694" y="75">
+          <location cols="3" rows="1">location_progress_track_10</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Progress Token Locations -->
+  <!-- Progress Token Locations Combat -->
+  <size width="33" height="32">
+    <location_type type="cell">
+      <valid_types types="progress">
+        <corner_coord board="3" x="52" y="120">
+          <location>location_progress_combat_1</location>
+        </corner_coord>
+        <corner_coord board="3" x="181" y="120">
+          <location>location_progress_combat_2</location>
+        </corner_coord>
+        <corner_coord board="3" x="247" y="119">
+          <location>location_progress_combat_3</location>
+        </corner_coord>
+        <corner_coord board="3" x="375" y="119">
+          <location>location_progress_combat_4</location>
+        </corner_coord>
+        <corner_coord board="3" x="439" y="118">
+          <location>location_progress_combat_5</location>
+        </corner_coord>
+        <corner_coord board="3" x="566" y="118">
+          <location>location_progress_combat_6</location>
+        </corner_coord>
+        <corner_coord board="3" x="632" y="118">
+          <location>location_progress_combat_7</location>
+        </corner_coord>
+        <corner_coord board="3" x="760" y="117">
+          <location>location_progress_combat_8</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Progress Token Locations Combat -->
+  <!-- END PROGRESS/COMBAT BOARD GENERAL LOCATIONS -->
+  <!-- COMBAT CARD LOCATIONS -->
+  <!-- Distant Lands Combat Card Locations -->
+  <size width="96" height="62">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <corner_coord board="1" x="7" y="6">
+          <valid_types types="combat2">
+            <location>location_distant_combat2</location>
+          </valid_types>
+        </corner_coord>
+        <corner_coord board="1" x="7" y="6">
+          <valid_types types="combat1">
+            <location>location_distant_combat1</location>
+          </valid_types>
+        </corner_coord>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Combat Card Locations -->
+  <!-- Combat Board Card Locations -->
+  <size width="90" height="138">
+    <location_type type="cell">
+      <valid_types types="combat1,combat2">
+        <location_in_action action="set_side" args="2">
+          <corner_coord board="3" x="88" y="63">
+            <location>location_combat_cards1</location>
+          </corner_coord>
+          <corner_coord board="3" x="282" y="63">
+            <location>location_combat_cards2</location>
+          </corner_coord>
+          <corner_coord board="3" x="474" y="63">
+            <location>location_combat_cards3</location>
+          </corner_coord>
+          <corner_coord board="3" x="667" y="63">
+            <location>location_combat_cards4</location>
+          </corner_coord>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Combat Board Card Locations -->
+  <!-- Combat Off-Board Location -->
+  <size width="90" height="138">
+    <location_type type="stack">
+      <valid_types types="combat1,combat2">
+        <corner_coord board="0" x="1100" y="800">
+          <location>location_combat_offboard</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Combat Off-Board Location -->
+  <!-- END COMBAT CARD LOCATIONS -->
+  <!-- GOLD LOCATIONS -->
+  <!-- Gold Draw Locations -->
+  <size width="67" height="70">
+    <location_type type="stack">
+      <corner_coord board="0" x="572" y="620">
+        <valid_types types="gold">
+          <location>location_main_gold</location>
+        </valid_types>
+      </corner_coord>
+    </location_type>
+  </size>
+  <!-- End Gold Draw Locations -->
+  <!-- Player Gold Locations -->
+  <size width="55" height="55">
+    <location_type type="stack">
+      <valid_types types="gold">
+        <location_display type="count">
+          <corner_coord board="0" x="817" y="412">
+            <location>location_player1_gold</location>
+          </corner_coord>
+          <corner_coord board="0" x="152" y="304">
+            <location>location_player2_gold</location>
+          </corner_coord>
+        </location_display>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Player Gold Locations -->
+  <!-- END GOLD LOCATIONS -->
+  <!-- FOOD LOCATIONS -->
+  <!-- Food Draw Locations -->
+  <size width="67" height="70">
+    <location_type type="stack">
+      <corner_coord board="0" x="639" y="620">
+        <valid_types types="food">
+          <location>location_main_food</location>
+        </valid_types>
+      </corner_coord>
+    </location_type>
+  </size>
+  <!-- End Food Draw Locations -->
+  <!-- Player Food Locations -->
+  <size width="55" height="55">
+    <location_type type="stack">
+      <valid_types types="food">
+        <location_display type="count">
+          <corner_coord board="0" x="815" y="469">
+            <location>location_player1_food</location>
+          </corner_coord>
+          <corner_coord board="0" x="151" y="243">
+            <location>location_player2_food</location>
+          </corner_coord>
+        </location_display>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Player Food Locations -->
+  <!-- END FOOD LOCATIONS -->
+  <!-- EVENT TILE LOCATIONS -->
+  <!-- Distant Lands Event Tile Locations -->
+  <size width="36" height="36">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <corner_coord board="1" x="125" y="80">
+          <valid_types types="event">
+            <location>location_distant_event</location>
+          </valid_types>
+        </corner_coord>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Event Tile Locations -->
+  <!-- Progress Board Event Tile Locations -->
+  <size width="50" height="50">
+    <location_type type="cell">
+      <valid_types types="event">
+        <location_in_action action="set_side" args="1">
+          <corner_coord board="2" x="499" y="66">
+            <location>location_progress_event_1</location>
+          </corner_coord>
+          <corner_coord board="2" x="270" y="66">
+            <location>location_progress_event_2</location>
+          </corner_coord>
+          <corner_coord board="2" x="41" y="66">
+            <location>location_progress_event_3</location>
+          </corner_coord>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Progress Board Event Tile Locations -->
+  <!-- END EVENT TILE LOCATIONS -->
+  <!-- MONSTER LOCATIONS -->
+  <!-- Distant Lands Monster Locations -->
+  <size width="65" height="95">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="1" x="300" y="5">
+            <valid_types types="monster2">
+              <location>location_distant_monsterdraw_year2</location>
+            </valid_types>
+            <valid_types types="monster1">
+              <location>location_distant_monsterdraw_year1</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <size width="95" height="65">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <location_in_action action="set_rotation" args="90">
+          <corner_coord board="1" x="266" y="130">
+            <valid_types types="monster1,monster2">
+              <location>location_distant_monsterdiscard</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Monster Locations -->
+  <!-- Tavern Monster Locations -->
+  <size width="135" height="95">
+    <location_type type="cell">
+      <location_in_action action="set_side" args="1">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="0" x="572" y="221">
+            <valid_types types="monster1,monster2">
+              <location cols="1" rows="3">location_main_tavern</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Tavern Monster Locations -->
+  <!-- Player Board Monster Locations -->
+  <size width="95" height="60">
+    <location_display type="count">
+      <location_type type="stack">
+        <valid_types types="monster1,monster2">
+          <location_in_action action="set_side" args="2">
+            <location_in_action action="set_rotation" args="0">
+              <corner_coord board="0" x="717" y="288">
+                <location cols="1" rows="2">location_player1_lair</location>
+              </corner_coord>
+              <corner_coord board="0" x="717" y="472">
+                <location>location_player1_combat_monster</location>
+              </corner_coord>
+            </location_in_action>
+            <location_in_action action="set_rotation" args="180">
+              <corner_coord board="0" x="214" y="360">
+                <location cols="1" rows="2">location_player2_lair</location>
+              </corner_coord>
+              <corner_coord board="0" x="214" y="235">
+                <location>location_player2_combat_monster</location>
+              </corner_coord>
+            </location_in_action>
+          </location_in_action>
+        </valid_types>
+      </location_type>
+    </location_display>
+  </size>
+  <!-- End Player Board Monster Locations -->
+  <!-- END MONSTER LOCATIONS -->
+  <!-- FIRST PLAYER TOKEN LOCATIONS -->
+  <!-- Player1 Location -->
+  <size width="45" height="45">
+    <location_type type="cell">
+      <location_in_action action="increment_rotation" args="180">
+        <valid_types types="firstplayer">
+          <corner_coord board="0" x="713" y="241">
+            <location>location_player1_firstplayer</location>
+          </corner_coord>
+        </valid_types>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Player1 Location -->
+  <!-- Player1 Location -->
+  <size width="45" height="45">
+    <location_type type="cell">
+      <location_in_action action="increment_rotation" args="180">
+        <valid_types types="firstplayer">
+          <corner_coord board="0" x="266" y="480">
+            <location>location_player2_firstplayer</location>
+          </corner_coord>
+        </valid_types>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Player1 Location -->
+  <!-- END FIRST PLAYER TOKEN LOCATIONS -->
+  <!-- DAMAGE TOKEN LOCATIONS -->
+  <!-- Damage Tokens Location -->
+  <size width="35" height="55">
+    <location_type type="stack">
+      <valid_types types="damage">
+        <location_in_action action="set_side" args="0">
+          <corner_coord board="1" x="5" y="83">
+            <location>location_distant_damage</location>
+          </corner_coord>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Damage Tokens Location -->
+  <!-- Player Board Adventurer Damage Locations -->
+  <size width="31" height="36">
+    <location_type type="stack">
+      <location_display type="count">
+        <valid_types types="damage">
+          <location_in_action action="set_side" args="0">
+            <corner_coord board="0" x="717" y="657">
+              <location cols="1" rows="3">location_player1_adventurer_damage</location>
+            </corner_coord>
+            <corner_coord board="0" x="276" y="3">
+              <location cols="1" rows="3">location_player2_adventurer_damage</location>
+            </corner_coord>
+          </location_in_action>
+        </valid_types>
+      </location_display>
+    </location_type>
+  </size>
+  <!-- End Player Board Adventurer Damage Locations -->
+  <!-- Player Board Lost Letter Locations -->
+  <size width="29" height="23">
+    <location_type type="stack">
+      <location_display type="count">
+        <valid_types types="damage">
+          <location_in_action action="set_side" args="1">
+            <corner_coord board="0" x="816" y="288">
+              <location>location_player1_lostletter</location>
+            </corner_coord>
+            <corner_coord board="0" x="179" y="457">
+              <location>location_player2_lostletter</location>
+            </corner_coord>
+          </location_in_action>
+        </valid_types>
+      </location_display>
+    </location_type>
+  </size>
+  <!-- End Player Board Lost Letter Locations -->
+  <!-- END DAMAGE TOKEN LOCATIONS -->
+  <!-- TROLL TOKEN DRAW LOCATION -->
+  <size width="35" height="55">
+    <location_type type="stack">
+      <valid_types types="troll">
+        <corner_coord board="1" x="40" y="83">
+          <location>location_distant_troll</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- END TROLL TOKEN DRAW LOCATION -->
+  <!-- PALADIN LOCATIONS -->
+  <!-- Paladin Draw Location -->
+  <size width="70" height="55">
+    <location_type type="stack">
+      <valid_types types="paladin">
+        <location_in_action action="set_side" args="0">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="1" x="5" y="138">
+              <location>location_distant_paladin</location>
+            </corner_coord>
+          </location_in_action>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Paladin Draw Location -->
+  <!-- Paladin Player Locations -->
+  <size width="66" height="36">
+    <location_type type="cell">
+      <valid_types types="paladin">
+        <location_in_action action="set_side" args="1">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="742" y="618">
+              <location>location_player1_paladin</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="216" y="114">
+              <location>location_player2_paladin</location>
+            </corner_coord>
+          </location_in_action>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Paladin Player Locations -->
+  <!-- END PALADIN LOCATIONS -->
+  <!-- ROOM LOCATIONS -->
+  <!-- Distant Lands Room Locations -->
+  <size width="60" height="60">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="1" x="221" y="5">
+            <valid_types types="room2">
+              <location>location_distant_roomdraw_year2</location>
+            </valid_types>
+            <valid_types types="room1">
+              <location>location_distant_roomdraw_year1</location>
+            </valid_types>
+          </corner_coord>
+          <corner_coord board="1" x="193" y="131">
+            <valid_types types="room2">
+              <location>location_distant_roomdiscard_year2</location>
+            </valid_types>
+            <valid_types types="room1">
+              <location>location_distant_roomdiscard_year1</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Monster Locations -->
+  <!-- Orders Locations -->
+  <size width="75" height="75">
+    <location_type type="cell">
+      <location_in_action action="set_side" args="1">
+        <location_in_action action="set_rotation" args="0">
+          <valid_types types="room1,room2">
+            <corner_coord board="0" x="577" y="129">
+              <location>location_main_room1</location>
+            </corner_coord>
+            <corner_coord board="0" x="627" y="27">
+              <location>location_main_room2</location>
+            </corner_coord>
+          </valid_types>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Orders Locations -->
+  <!-- Main Grid -->
+  <size width="47" height="47">
+    <location_type type="cell">
+      <valid_types types="room1,room2">
+        <location_in_action action="set_side" args="2">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="833" y="531">
+              <location cols="4" rows="5">location_player1_roomgrid</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="4" y="4">
+              <location cols="4" rows="5">location_player2_roomgrid</location>
+            </corner_coord>
+          </location_in_action>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Main Grid -->
+  <!-- END ROOM LOCATIONS -->
+  <!-- TUNNEL LOCATIONS -->
+  <!-- Tunnel Draw Location -->
+  <size width="67" height="70">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="1">
+        <valid_types types="tunnel">
+          <corner_coord board="0" x="572" y="690">
+            <location>location_main_tunnel</location>
+          </corner_coord>
+        </valid_types>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Tunnel Draw Location -->
+  <!-- Main Grids -->
+  <size width="47" height="47">
+    <location_type type="cell">
+      <valid_types types="tunnel">
+        <location_in_action action="set_side" args="0">
+          <corner_coord board="0" x="833" y="531">
+            <location cols="4" rows="5">location_player1_tunnelgrid</location>
+          </corner_coord>
+          <corner_coord board="0" x="4" y="4">
+            <location cols="4" rows="5">location_player2_tunnelgrid</location>
+          </corner_coord>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Main Grid -->
+  <!-- END TUNNEL LOCATIONS -->
+  <!-- IMP LOCATIONS -->
+  <!-- Imp Draw Location -->
+  <size width="67" height="70">
+    <location_type type="stack">
+      <location_in_action action="set_rotation" args="0">
+        <valid_types types="imp">
+          <corner_coord board="0" x="639" y="690">
+            <location>location_main_imp</location>
+          </corner_coord>
+        </valid_types>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Imp Draw Location -->
+  <!-- Player Imp Locations -->
+  <size width="55" height="55">
+    <location_type type="stack">
+      <valid_types types="imp,troll">
+        <location_display type="count">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="878" y="469">
+              <location>location_player1_imp</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="90" y="243">
+              <location>location_player2_imp</location>
+            </corner_coord>
+          </location_in_action>
+        </location_display>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Player Imp Locations -->
+  <!-- Main Grids -->
+  <size width="47" height="47">
+    <location_type type="stack">
+      <valid_types types="imp,troll">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="0" x="833" y="531">
+            <location cols="4" rows="5">location_player1_impgrid</location>
+          </corner_coord>
+        </location_in_action>
+        <location_in_action action="set_rotation" args="180">
+          <corner_coord board="0" x="4" y="4">
+            <location cols="4" rows="5">location_player2_impgrid</location>
+          </corner_coord>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Main Grids -->
+  <!-- END IMP LOCATIONS -->
+  <!-- Evilometer locations -->
+  <size width="18" height="33">
+    <location_type type="cell">
+      <corner_coord board="0" x="327" y="9">
+        <valid_types types="evil">
+          <location cols="15" rows="3">location_main_evil</location>
+        </valid_types>
+      </corner_coord>
+    </location_type>
+  </size>
+  <!-- End Evilometer locations -->
+  <!-- ORDER CARD LOCATIONS -->
+  <!-- Deck locations -->
+  <size width="80" height="50">
+    <location_type type="stack">
+      <valid_types types="orders1">
+        <corner_coord board="0" x="939" y="233">
+          <location>location_player1_ordersdeck</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="orders2">
+        <corner_coord board="0" x="5" y="484">
+          <location>location_player2_ordersdeck</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="60" height="90">
+    <location_type type="stack">
+      <valid_types types="orders1a">
+        <corner_coord board="0" x="712" y="82">
+          <location>location_player1a_ordersdeck</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="orders2a">
+        <corner_coord board="0" x="252" y="600">
+          <location>location_player2a_ordersdeck</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Deck locations -->
+  <!-- Player active/inaccessible -->
+  <size width="80" height="61">
+    <location_type type="cell">
+      <valid_types types="orders1">
+        <corner_coord board="0" x="939" y="283">
+          <location cols="1" rows="3">location_player1_ordersactive</location>
+        </corner_coord>
+        <corner_coord board="0" x="851" y="283">
+          <location cols="1" rows="2">location_player1_ordersinaccessible</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="orders2">
+        <corner_coord board="0" x="5" y="301">
+          <location cols="1" rows="3">location_player2_ordersactive</location>
+        </corner_coord>
+        <corner_coord board="0" x="93" y="362">
+          <location cols="1" rows="2">location_player2_ordersinaccessible</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Active locations -->
+  <!-- Non-player locations -->
+  <size width="68" height="95">
+    <location_type type="cell">
+      <valid_types types="orders1a">
+        <corner_coord board="0" x="815" y="24">
+          <location cols="3" rows="2">location_player1a_orders</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="69" height="99">
+    <location_type type="cell">
+      <valid_types types="orders2a">
+        <corner_coord board="0" x="1" y="549">
+          <location cols="3" rows="2">location_player2a_orders</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Non-player locations -->
+  <!-- Player positioning -->
+  <size width="84" height="50">
+    <location_type type="cell">
+      <valid_types types="orders1">
+        <corner_coord board="0" x="769" y="233">
+          <location cols="2" rows="1">location_player1_orderspositioning</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="orders2">
+        <corner_coord board="0" x="87" y="484">
+          <location cols="2" rows="1">location_player2_orderspositioning</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="60" height="90">
+    <location_type type="cell">
+      <valid_types types="orders1a">
+        <corner_coord board="0" x="772" y="82">
+          <location>location_player1a_orderspositioning</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="orders2a">
+        <corner_coord board="0" x="192" y="600">
+          <location>location_player2a_orderspositioning</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Active locations -->
+  <!-- END ORDER CARD LOCATIONS -->
+  <!-- MINION LOCATIONS -->
+  <!-- Desk locations -->
+  <size width="30" height="32">
+    <location_type type="cell">
+      <corner_coord board="0" x="815" y="314">
+        <valid_types types="minion1">
+          <location cols="1" rows="3">location_player1_desk</location>
+        </valid_types>
+      </corner_coord>
+      <corner_coord board="0" x="179" y="359">
+        <valid_types types="minion2">
+          <location cols="1" rows="3">location_player2_desk</location>
+        </valid_types>
+      </corner_coord>
+    </location_type>
+  </size>
+  <size width="30" height="27">
+    <location_type type="cell">
+      <corner_coord board="0" x="710" y="212">
+        <valid_types types="minion1a">
+          <location cols="3" rows="1">location_green_desk</location>
+        </valid_types>
+      </corner_coord>
+      <corner_coord board="0" x="225" y="531">
+        <valid_types types="minion2a">
+          <location cols="3" rows="1">location_yellow_desk</location>
+        </valid_types>
+      </corner_coord>
+    </location_type>
+  </size>
+  <!-- End Desk locations -->
+  <!-- Order cards locations -->
+  <size width="40" height="50">
+    <location_type type="cell">
+      <valid_types types="minion1">
+        <corner_coord board="0" x="979" y="289">
+          <location>location_player1_minioncard3</location>
+        </corner_coord>
+        <corner_coord board="0" x="979" y="350">
+          <location>location_player1_minioncard2</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="minion2">
+        <corner_coord board="0" x="5" y="368">
+          <location>location_player2_minioncard2</location>
+        </corner_coord>
+        <corner_coord board="0" x="5" y="429">
+          <location>location_player2_minioncard3</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Order cards locations -->
+  <!-- Order locations -->
+  <size width="29" height="27">
+    <location_type type="cell">
+      <valid_types types="minion1,minion1a,minion2,minion2a">
+        <corner_coord board="0" x="346" y="222">
+          <location cols="3" rows="1">location_orders_gold</location>
+        </corner_coord>
+        <corner_coord board="0" x="472" y="222">
+          <location cols="3" rows="1">location_orders_room</location>
+        </corner_coord>
+        <corner_coord board="0" x="345" y="388">
+          <location cols="3" rows="1">location_orders_tunnel</location>
+        </corner_coord>
+        <corner_coord board="0" x="472" y="387">
+          <location cols="3" rows="1">location_orders_monster</location>
+        </corner_coord>
+        <corner_coord board="0" x="345" y="557">
+          <location cols="3" rows="1">location_orders_evil</location>
+        </corner_coord>
+        <corner_coord board="0" x="471" y="557">
+          <location cols="3" rows="1">location_orders_trap</location>
+        </corner_coord>
+        <corner_coord board="0" x="345" y="722">
+          <location cols="3" rows="1">location_orders_food</location>
+        </corner_coord>
+        <corner_coord board="0" x="471" y="721">
+          <location cols="3" rows="1">location_orders_imp</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Order locations -->
+  <!-- Combat scoring locations -->
+  <size width="30" height="45">
+    <location_type type="stack">
+      <valid_types types="minion1,minion2">
+        <corner_coord board="2" x="50" y="233">
+          <location cols="25" rows="1">location_combat_scoringtop</location>
+        </corner_coord>
+        <corner_coord board="2" x="50" y="0">
+          <location cols="25" rows="1">location_combat_scoringbottom</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="48" height="52">
+    <location_type type="stack">
+      <valid_types types="minion1,minion2">
+        <corner_coord board="2" x="0" y="0">
+          <location cols="1" rows="1">location_combat_scoringbottomcorner</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="48" height="46">
+    <location_type type="stack">
+      <valid_types types="minion1,minion2">
+        <corner_coord board="2" x="0" y="232">
+          <location cols="1" rows="1">location_combat_scoringtopcorner</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <size width="48" height="30">
+    <location_type type="stack">
+      <valid_types types="minion1,minion2">
+        <corner_coord board="2" x="0" y="52">
+          <location cols="1" rows="6">location_combat_scoringright</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Combat scoring locations -->
+  <!-- Main Grids -->
+  <size width="47" height="47">
+    <location_type type="cell">
+      <valid_types types="minion1">
+        <corner_coord board="0" x="833" y="531">
+          <location cols="4" rows="5">location_player1_miniongrid</location>
+        </corner_coord>
+      </valid_types>
+      <valid_types types="minion2">
+        <corner_coord board="0" x="4" y="4">
+          <location cols="4" rows="5">location_player2_miniongrid</location>
+        </corner_coord>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Main Grids -->
+  <!-- END MINION LOCATIONS -->
+  <!-- TRAP LOCATIONS -->
+  <!-- Distant Lands Location -->
+  <size width="100" height="64">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="1">
+        <corner_coord board="1" x="81" y="130">
+          <valid_types types="trap">
+            <location>location_distant_traps</location>
+          </valid_types>
+        </corner_coord>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Location -->
+  <!-- Trap Draw Location -->
+  <size width="133" height="96">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <corner_coord board="0" x="572" y="513">
+          <valid_types types="trap">
+            <location>location_main_traps</location>
+          </valid_types>
+        </corner_coord>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Trap Draw Location -->
+  <!-- Player Board Trap Locations -->
+  <size width="80" height="52">
+    <location_display type="count">
+      <location_type type="stack">
+        <valid_types types="trap">
+          <location_in_action action="set_side" args="2">
+            <location_in_action action="set_rotation" args="0">
+              <corner_coord board="0" x="938" y="470">
+                <location>location_player1_closet</location>
+              </corner_coord>
+              <corner_coord board="0" x="721" y="557">
+                <location>location_player1_combat_trap</location>
+              </corner_coord>
+            </location_in_action>
+            <location_in_action action="set_rotation" args="180">
+              <corner_coord board="0" x="6" y="246">
+                <location>location_player2_closet</location>
+              </corner_coord>
+              <corner_coord board="0" x="223" y="158">
+                <location>location_player2_combat_trap</location>
+              </corner_coord>
+            </location_in_action>
+          </location_in_action>
+        </valid_types>
+      </location_type>
+    </location_display>
+  </size>
+  <size width="311" height="240">
+    <location_type type="cell">
+      <valid_types types="trap">
+        <location_in_action action="set_side" args="3">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="712" y="0">
+              <location>location_player1_largetrap</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="0" y="528">
+              <location>location_player2_largetrap</location>
+            </corner_coord>
+          </location_in_action>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Player Board Trap Locations -->
+  <!-- END TRAP LOCATIONS -->
+  <!-- ADVENTURER LOCATIONS -->
+  <!-- Distant Lands Adventurer Locations -->
+  <size width="38" height="65">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="1" x="170" y="4">
+            <valid_types types="adventurer1">
+              <location>location_distant_adventurerdraw_year1</location>
+            </valid_types>
+          </corner_coord>
+          <corner_coord board="1" x="118" y="4">
+            <valid_types types="adventurer2">
+              <location>location_distant_adventurerdraw_year2</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <size width="67" height="38">
+    <location_type type="stack">
+      <location_in_action action="set_side" args="0">
+        <location_in_action action="set_rotation" args="90">
+          <corner_coord board="1" x="202" y="80">
+            <valid_types types="adventurer1,adventurer2">
+              <location>location_distant_adventurerdiscard</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Distant Lands Adventurer Locations -->
+  <!-- Progress Board Adventurer Locations -->
+  <size width="55" height="92">
+    <location_type type="cell">
+      <location_in_action action="set_side" args="1">
+        <location_in_action action="set_rotation" args="0">
+          <corner_coord board="2" x="7" y="169">
+            <valid_types types="adventurer1,adventurer2">
+              <location cols="4" rows="1">location_progress_adventurer_fall</location>
+            </valid_types>
+          </corner_coord>
+          <corner_coord board="2" x="236" y="169">
+            <valid_types types="adventurer1,adventurer2">
+              <location cols="4" rows="1">location_progress_adventurer_summer</location>
+            </valid_types>
+          </corner_coord>
+          <corner_coord board="2" x="465" y="169">
+            <valid_types types="adventurer1,adventurer2">
+              <location cols="4" rows="1">location_progress_adventurer_spring</location>
+            </valid_types>
+          </corner_coord>
+        </location_in_action>
+      </location_in_action>
+    </location_type>
+  </size>
+  <!-- End Progress Board Adventurer Locations -->
+  <!-- Player Board Adventurer Prison Locations -->
+  <size width="55" height="50">
+    <location_display type="count">
+      <location_type type="stack">
+        <valid_types types="adventurer1,adventurer2,paladin">
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="90" y="304">
+              <location>location_player2_prison</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="878" y="414">
+              <location>location_player1_prison</location>
+            </corner_coord>
+          </location_in_action>
+        </valid_types>
+      </location_type>
+    </location_display>
+  </size>
+  <!-- End Player Board Adventurer Prison Locations -->
+  <!-- Player Board Adventurer Start Locations -->
+  <size width="57" height="36">
+    <location_type type="cell">
+      <valid_types types="adventurer1,adventurer2">
+        <location_in_action action="set_side" args="2">
+          <location_in_action action="set_rotation" args="0">
+            <corner_coord board="0" x="753" y="657">
+              <location cols="1" rows="3">location_player1_adventurer_start</location>
+            </corner_coord>
+          </location_in_action>
+          <location_in_action action="set_rotation" args="180">
+            <corner_coord board="0" x="216" y="3">
+              <location cols="1" rows="3">location_player2_adventurer_start</location>
+            </corner_coord>
+          </location_in_action>
+        </location_in_action>
+      </valid_types>
+    </location_type>
+  </size>
+  <!-- End Player Board Adventurer Start Locations -->
+  <!-- END ADVENTURER LOCATIONS -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES PIECES -->
+  <!-- Token Pieces -->
+  <piece_type type="progress">
+    <initial_location name="location_progress_track_10_2_0">
+      <sides paths="Dungeon Lords_Image_Token_Progress.png">
+        <piece>progressToken</piece>
+      </sides>
+    </initial_location>
+    <initial_location name="location_progress_combat_8">
+      <sides paths="Dungeon Lords_Image_Token_Progress.png">
+        <piece>combatProgressToken</piece>
+      </sides>
+    </initial_location>
+  </piece_type>
+  <piece_type type="gold">
+    <initial_location name="location_main_gold">
+      <sides paths="Dungeon Lords_Image_Token_Gold.png">
+        <piece count="30">goldToken</piece>
+      </sides>
+    </initial_location>
+  </piece_type>
+  <piece_type type="food">
+    <initial_location name="location_main_food">
+      <sides paths="Dungeon Lords_Image_Token_Food.png">
+        <piece count="30">foodToken</piece>
+      </sides>
+    </initial_location>
+  </piece_type>
+  <piece_type type="tunnel">
+    <single_tap action="increment_side" args="cap">
+      <double_tap action="decrement_side" args="cap">
+        <initial_side value="1">
+          <initial_location name="location_main_tunnel">
+            <sides paths="Dungeon Lords_Image_Token_Tunnel.png,Dungeon Lords_Image_Token_TunnelBack.png">
+              <piece count="30">tunnelToken</piece>
+            </sides>
+          </initial_location>
+        </initial_side>
+      </double_tap>
+    </single_tap>
+  </piece_type>
+  <piece_type type="imp">
+    <single_tap action="increment_rotation" args="90">
+      <double_tap action="increment_rotation" args="-90">
+        <initial_location name="location_main_imp">
+          <sides paths="Dungeon Lords_Image_Token_Imp.png">
+            <piece count="30">impToken</piece>
+          </sides>
+        </initial_location>
+      </double_tap>
+    </single_tap>
+  </piece_type>
+  <piece_type type="firstplayer">
+    <initial_side value="0">
+      <initial_location name="location_player1_firstplayer">
+        <sides paths="Dungeon Lords_Image_Token_FirstPlayer_Player1.png">
+          <piece>firstPlayerPiece</piece>
+        </sides>
+      </initial_location>
+    </initial_side>
+  </piece_type>
+  <initial_side value="0">
+    <piece_type type="damage">
+      <initial_location name="location_distant_damage">
+        <sides paths="Dungeon Lords_Image_Token_Damage.png,Dungeon Lords_Image_Token_Damage_Small.png">
+          <piece count="40">damagePiece</piece>
+        </sides>
+      </initial_location>
+    </piece_type>
+  </initial_side>
+  <piece_type type="troll">
+    <single_tap action="increment_rotation" args="90">
+      <double_tap action="increment_rotation" args="-90">
+        <initial_location name="location_distant_troll">
+          <sides paths="Dungeon Lords_Image_Token_Troll.png">
+            <piece count="15">trollPiece</piece>
+          </sides>
+        </initial_location>
+      </double_tap>
+    </single_tap>
+  </piece_type>
+  <!-- End Token Pieces -->
+  <!-- Evilometer Pieces -->
+  <piece_type type="evil">
+    <initial_location name="location_main_evil_10_2">
+      <sides paths="Dungeon Lords_Image_Token_BlueEvil.png">
+        <piece>evilblue</piece>
+      </sides>
+    </initial_location>
+    <initial_location name="location_main_evil_10_1">
+      <sides paths="Dungeon Lords_Image_Token_RedEvil.png">
+        <piece>evilred</piece>
+      </sides>
+    </initial_location>
+    <initial_location name="location_main_evil_10_0">
+      <sides paths="Dungeon Lords_Image_Token_GreenEvil.png">
+        <piece>evilgreen</piece>
+      </sides>
+    </initial_location>
+  </piece_type>
+  <!-- End Evilometer Pieces -->
+  <!-- Minion Pieces -->
+  <piece_type type="minion1">
+    <sides paths="Dungeon Lords_Image_Token_BlueMinion.png">
+      <initial_location name="location_player1_desk_0_0">
+        <piece>blueminion1</piece>
+      </initial_location>
+      <initial_location name="location_player1_desk_0_1">
+        <piece>blueminion2</piece>
+      </initial_location>
+      <initial_location name="location_player1_desk_0_2">
+        <piece>blueminion3</piece>
+      </initial_location>
+    </sides>
+  </piece_type>
+  <piece_type type="minion1a">
+    <sides paths="Dungeon Lords_Image_Token_GreenMinion.png">
+      <initial_location name="location_green_desk_0_0">
+        <piece>greenminion1</piece>
+      </initial_location>
+      <initial_location name="location_green_desk_1_0">
+        <piece>greenminion2</piece>
+      </initial_location>
+      <initial_location name="location_green_desk_2_0">
+        <piece>greenminion3</piece>
+      </initial_location>
+    </sides>
+  </piece_type>
+  <piece_type type="minion2">
+    <sides paths="Dungeon Lords_Image_Token_RedMinion.png">
+      <initial_location name="location_player2_desk_0_0">
+        <piece>redminion1</piece>
+      </initial_location>
+      <initial_location name="location_player2_desk_0_1">
+        <piece>redminion2</piece>
+      </initial_location>
+      <initial_location name="location_player2_desk_0_2">
+        <piece>redminion3</piece>
+      </initial_location>
+    </sides>
+  </piece_type>
+  <piece_type type="minion2a">
+    <sides paths="Dungeon Lords_Image_Token_YellowMinion.png">
+      <initial_location name="location_yellow_desk_0_0">
+        <piece>yellowminion1</piece>
+      </initial_location>
+      <initial_location name="location_yellow_desk_1_0">
+        <piece>yellowminion2</piece>
+      </initial_location>
+      <initial_location name="location_yellow_desk_2_0">
+        <piece>yellowminion3</piece>
+      </initial_location>
+    </sides>
+  </piece_type>
+  <!-- End Minion Pieces -->
+  <!-- Orders Cards -->
+  <quad_tap action="shuffle_location" args="">
+    <triple_tap action="send_to_back">
+      <double_tap action="increment_side" args="cap">
+        <single_tap action="decrement_side" args="cap">
+          <capture_location name="swap">
+            <piece_type type="orders1">
+              <quad_tap action="set_side" args="1,orders1_1">
+                <quad_tap action="set_side" args="1,orders1_2">
+                  <quad_tap action="set_side" args="1,orders1_3">
+                    <quad_tap action="set_side" args="1,orders1_4">
+                      <quad_tap action="set_side" args="1,orders1_5">
+                        <quad_tap action="set_side" args="1,orders1_6">
+                          <quad_tap action="set_side" args="1,orders1_7">
+                            <quad_tap action="set_side" args="1,orders1_8">
+                              <triple_tap action="move_piece_at_location" args="location_player1_ordersdeck,location_player1_ordersactive_0_0">
+                                <triple_tap action="move_piece_at_location" args="location_player1_ordersdeck,location_player1_ordersactive_0_1">
+                                  <triple_tap action="move_piece_at_location" args="location_player1_ordersdeck,location_player1_ordersactive_0_2">
+                                    <triple_tap action="move_piece_at_location" args="location_player1_ordersdeck,location_player1_orderspositioning_0_0">
+                                      <triple_tap action="move_piece_at_location" args="location_player1_ordersdeck,location_player1_orderspositioning_1_0">
+                                        <initial_location name="location_player1_ordersdeck">
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_1.png">
+                                            <piece>orders1_1</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_2.png">
+                                            <piece>orders1_2</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_3.png">
+                                            <piece>orders1_3</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_4.png">
+                                            <piece>orders1_4</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_5.png">
+                                            <piece>orders1_5</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_6.png">
+                                            <piece>orders1_6</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_7.png">
+                                            <piece>orders1_7</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player1_Back.png,Dungeon Lords_Image_Orders_Player1_8.png">
+                                            <piece>orders1_8</piece>
+                                          </sides>
+                                        </initial_location>
+                                      </triple_tap>
+                                    </triple_tap>
+                                  </triple_tap>
+                                </triple_tap>
+                              </triple_tap>
+                            </quad_tap>
+                          </quad_tap>
+                        </quad_tap>
+                      </quad_tap>
+                    </quad_tap>
+                  </quad_tap>
+                </quad_tap>
+              </quad_tap>
+            </piece_type>
+            <piece_type type="orders1a">
+              <quad_tap action="set_side" args="1,orders1a_1">
+                <quad_tap action="set_side" args="1,orders1a_2">
+                  <quad_tap action="set_side" args="1,orders1a_3">
+                    <quad_tap action="set_side" args="1,orders1a_4">
+                      <quad_tap action="set_side" args="1,orders1a_5">
+                        <quad_tap action="set_side" args="1,orders1a_6">
+                          <quad_tap action="set_side" args="1,orders1a_7">
+                            <quad_tap action="set_side" args="1,orders1a_8">
+                              <triple_tap action="move_piece_at_location" args="location_player1a_ordersdeck,location_player1a_orders_0_1">
+                                <triple_tap action="move_piece_at_location" args="location_player1a_ordersdeck,location_player1a_orders_1_1">
+                                  <triple_tap action="move_piece_at_location" args="location_player1a_ordersdeck,location_player1a_orders_2_1">
+                                    <triple_tap action="move_piece_at_location" args="location_player1a_ordersdeck,location_player1a_orderspositioning">
+                                      <initial_location name="location_player1a_ordersdeck">
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_1.png">
+                                          <piece>orders1a_1</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_2.png">
+                                          <piece>orders1a_2</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_3.png">
+                                          <piece>orders1a_3</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_4.png">
+                                          <piece>orders1a_4</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_5.png">
+                                          <piece>orders1a_5</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_6.png">
+                                          <piece>orders1a_6</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_7.png">
+                                          <piece>orders1a_7</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player1a_Back.png,Dungeon Lords_Image_Orders_Player1a_8.png">
+                                          <piece>orders1a_8</piece>
+                                        </sides>
+                                      </initial_location>
+                                    </triple_tap>
+                                  </triple_tap>
+                                </triple_tap>
+                              </triple_tap>
+                            </quad_tap>
+                          </quad_tap>
+                        </quad_tap>
+                      </quad_tap>
+                    </quad_tap>
+                  </quad_tap>
+                </quad_tap>
+              </quad_tap>
+            </piece_type>
+            <piece_type type="orders2">
+              <quad_tap action="set_side" args="1,orders2_1">
+                <quad_tap action="set_side" args="1,orders2_2">
+                  <quad_tap action="set_side" args="1,orders2_3">
+                    <quad_tap action="set_side" args="1,orders2_4">
+                      <quad_tap action="set_side" args="1,orders2_5">
+                        <quad_tap action="set_side" args="1,orders2_6">
+                          <quad_tap action="set_side" args="1,orders2_7">
+                            <quad_tap action="set_side" args="1,orders2_8">
+                              <triple_tap action="move_piece_at_location" args="location_player2_ordersdeck,location_player2_ordersactive_0_0">
+                                <triple_tap action="move_piece_at_location" args="location_player2_ordersdeck,location_player2_ordersactive_0_1">
+                                  <triple_tap action="move_piece_at_location" args="location_player2_ordersdeck,location_player2_ordersactive_0_2">
+                                    <triple_tap action="move_piece_at_location" args="location_player2_ordersdeck,location_player2_orderspositioning_0_0">
+                                      <triple_tap action="move_piece_at_location" args="location_player2_ordersdeck,location_player2_orderspositioning_1_0">
+                                        <initial_location name="location_player2_ordersdeck">
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_1.png">
+                                            <piece>orders2_1</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_2.png">
+                                            <piece>orders2_2</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_3.png">
+                                            <piece>orders2_3</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_4.png">
+                                            <piece>orders2_4</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_5.png">
+                                            <piece>orders2_5</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_6.png">
+                                            <piece>orders2_6</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_7.png">
+                                            <piece>orders2_7</piece>
+                                          </sides>
+                                          <sides paths="Dungeon Lords_Image_Orders_Player2_Back.png,Dungeon Lords_Image_Orders_Player2_8.png">
+                                            <piece>orders2_8</piece>
+                                          </sides>
+                                        </initial_location>
+                                      </triple_tap>
+                                    </triple_tap>
+                                  </triple_tap>
+                                </triple_tap>
+                              </triple_tap>
+                            </quad_tap>
+                          </quad_tap>
+                        </quad_tap>
+                      </quad_tap>
+                    </quad_tap>
+                  </quad_tap>
+                </quad_tap>
+              </quad_tap>
+            </piece_type>
+            <piece_type type="orders2a">
+              <quad_tap action="set_side" args="1,orders2a_1">
+                <quad_tap action="set_side" args="1,orders2a_2">
+                  <quad_tap action="set_side" args="1,orders2a_3">
+                    <quad_tap action="set_side" args="1,orders2a_4">
+                      <quad_tap action="set_side" args="1,orders2a_5">
+                        <quad_tap action="set_side" args="1,orders2a_6">
+                          <quad_tap action="set_side" args="1,orders2a_7">
+                            <quad_tap action="set_side" args="1,orders2a_8">
+                              <triple_tap action="move_piece_at_location" args="location_player2a_ordersdeck,location_player2a_orders_0_0">
+                                <triple_tap action="move_piece_at_location" args="location_player2a_ordersdeck,location_player2a_orders_1_0">
+                                  <triple_tap action="move_piece_at_location" args="location_player2a_ordersdeck,location_player2a_orders_2_0">
+                                    <triple_tap action="move_piece_at_location" args="location_player2a_ordersdeck,location_player2a_orderspositioning">
+                                      <initial_location name="location_player2a_ordersdeck">
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_1.png">
+                                          <piece>orders2a_1</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_2.png">
+                                          <piece>orders2a_2</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_3.png">
+                                          <piece>orders2a_3</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_4.png">
+                                          <piece>orders2a_4</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_5.png">
+                                          <piece>orders2a_5</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_6.png">
+                                          <piece>orders2a_6</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_7.png">
+                                          <piece>orders2a_7</piece>
+                                        </sides>
+                                        <sides paths="Dungeon Lords_Image_Orders_Player2a_Back.png,Dungeon Lords_Image_Orders_Player2a_8.png">
+                                          <piece>orders2a_8</piece>
+                                        </sides>
+                                      </initial_location>
+                                    </triple_tap>
+                                  </triple_tap>
+                                </triple_tap>
+                              </triple_tap>
+                            </quad_tap>
+                          </quad_tap>
+                        </quad_tap>
+                      </quad_tap>
+                    </quad_tap>
+                  </quad_tap>
+                </quad_tap>
+              </quad_tap>
+            </piece_type>
+          </capture_location>
+        </single_tap>
+      </double_tap>
+    </triple_tap>
+  </quad_tap>
+  <!-- End Orders Cards -->
+  <!-- Combat Card Pieces -->
+  <quad_tap action="shuffle_location" args="">
+    <triple_tap action="move_piece" args="location_combat_offboard">
+      <double_tap action="decrement_side" args="cap">
+        <single_tap action="increment_side" args="cap">
+          <piece_type type="combat1">
+            <initial_location name="location_distant_combat1">
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_1.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat1a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_2.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat2a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_3.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat3a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_4.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat4a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_5.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat5a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_6.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat6a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_7.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat7a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_8.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat8a</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year1_Back.png,Dungeon Lords_Image_Combat_Year1_9.png,Dungeon Lords_Image_Combat_Year1_Back.png">
+                <piece>combat9a</piece>
+              </sides>
+            </initial_location>
+          </piece_type>
+          <piece_type type="combat2">
+            <initial_location name="location_distant_combat2">
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_1.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat1b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_2.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat2b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_3.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat3b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_4.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat4b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_5.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat5b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_6.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat6b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_7.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat7b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_8.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat8b</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Combat_Distant_Year2_Back.png,Dungeon Lords_Image_Combat_Year2_9.png,Dungeon Lords_Image_Combat_Year2_Back.png">
+                <piece>combat9b</piece>
+              </sides>
+            </initial_location>
+          </piece_type>
+        </single_tap>
+      </double_tap>
+    </triple_tap>
+  </quad_tap>
+  <!-- End Combat Card Pieces -->
+  <!-- Event Tile Pieces -->
+  <quad_tap action="shuffle_location" args="">
+    <piece_type type="event">
+      <initial_location name="location_distant_event">
+        <sides paths="Dungeon Lords_Image_Event_Back.png,Dungeon Lords_Image_Event_1.png">
+          <piece>event1</piece>
+        </sides>
+        <sides paths="Dungeon Lords_Image_Event_Back.png,Dungeon Lords_Image_Event_2.png">
+          <piece>event2</piece>
+        </sides>
+        <sides paths="Dungeon Lords_Image_Event_Back.png,Dungeon Lords_Image_Event_3.png">
+          <piece>event3</piece>
+        </sides>
+      </initial_location>
+    </piece_type>
+  </quad_tap>
+  <!-- End Event Tile Pieces -->
+  <!-- Trap Cards -->
+  <quad_tap action="shuffle_location" args="">
+    <triple_tap action="send_to_back">
+      <piece_type type="trap">
+        <initial_location name="location_main_traps">
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_1.png,Dungeon Lords_Image_Traps_Player1_Large_1.png">
+            <piece count="3">trap1</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_2.png,Dungeon Lords_Image_Traps_Player1_Large_2.png">
+            <piece count="3">trap2</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_3.png,Dungeon Lords_Image_Traps_Player1_Large_3.png">
+            <piece count="3">trap3</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_4.png,Dungeon Lords_Image_Traps_Player1_Large_4.png">
+            <piece count="3">trap4</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_5.png,Dungeon Lords_Image_Traps_Player1_Large_5.png">
+            <piece count="3">trap5</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_6.png,Dungeon Lords_Image_Traps_Player1_Large_6.png">
+            <piece count="3">trap6</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_7.png,Dungeon Lords_Image_Traps_Player1_Large_7.png">
+            <piece count="3">trap7</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_8.png,Dungeon Lords_Image_Traps_Player1_Large_8.png">
+            <piece count="3">trap8</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Traps_Main_Back.png,Dungeon Lords_Image_Traps_Distant_Back.png,Dungeon Lords_Image_Traps_Player1_Small_9.png,Dungeon Lords_Image_Traps_Player1_Large_9.png">
+            <piece count="3">trap9</piece>
+          </sides>
+        </initial_location>
+      </piece_type>
+    </triple_tap>
+  </quad_tap>
+  <!-- End Trap Cards -->
+  <!-- Monster Pieces -->
+  <quad_tap action="shuffle_location" args="">
+    <single_tap action="increment_side" args="cap">
+      <double_tap action="decrement_side" args="cap">
+        <triple_tap action="send_to_back">
+          <piece_type type="monster1">
+            <initial_location name="location_distant_monsterdraw_year1">
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_1.png,Dungeon Lords_Image_Monster_Player1_Year1_1.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">ghost</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_2.png,Dungeon Lords_Image_Monster_Player1_Year1_2.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">goblin</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_3.png,Dungeon Lords_Image_Monster_Player1_Year1_3.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">slime</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_4.png,Dungeon Lords_Image_Monster_Player1_Year1_4.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">troll</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_5.png,Dungeon Lords_Image_Monster_Player1_Year1_5.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">vampire</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year1_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_6.png,Dungeon Lords_Image_Monster_Player1_Year1_6.png,Dungeon Lords_Image_Monster_Player1_Year1_Back.png">
+                <piece count="2">witch</piece>
+              </sides>
+            </initial_location>
+          </piece_type>
+          <piece_type type="monster2">
+            <initial_location name="location_distant_monsterdraw_year2">
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_1.png,Dungeon Lords_Image_Monster_Player1_Year1_1.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>ghostYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_2.png,Dungeon Lords_Image_Monster_Player1_Year1_2.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>goblinYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_3.png,Dungeon Lords_Image_Monster_Player1_Year1_3.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>slimeYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_4.png,Dungeon Lords_Image_Monster_Player1_Year1_4.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>trollYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_5.png,Dungeon Lords_Image_Monster_Player1_Year1_5.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>vampireYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year1_6.png,Dungeon Lords_Image_Monster_Player1_Year1_6.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece>witchYear2</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year2_1.png,Dungeon Lords_Image_Monster_Player1_Year2_1.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece count="2">demon</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year2_2.png,Dungeon Lords_Image_Monster_Player1_Year2_2.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece count="2">dragon</piece>
+              </sides>
+              <sides paths="Dungeon Lords_Image_Monster_Distant_Year2_Draw.png,Dungeon Lords_Image_Monster_Tavern_Year2_3.png,Dungeon Lords_Image_Monster_Player1_Year2_3.png,Dungeon Lords_Image_Monster_Player1_Year2_Back.png">
+                <piece count="2">golem</piece>
+              </sides>
+            </initial_location>
+          </piece_type>
+        </triple_tap>
+      </double_tap>
+    </single_tap>
+  </quad_tap>
+  <!-- End Monster Pieces -->
+  <!-- Room Pieces -->
+  <quad_tap action="shuffle_location" args="">
+    <single_tap action="increment_side" args="cap">
+      <double_tap action="decrement_side" args="cap">
+        <piece_type type="room1">
+          <initial_location name="location_distant_roomdraw_year1">
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_1.png,Dungeon Lords_Image_Room_Year1_Player1_Front_1.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece count="2">room1_1</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_2.png,Dungeon Lords_Image_Room_Year1_Player1_Front_2.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece>room1_2</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_3.png,Dungeon Lords_Image_Room_Year1_Player1_Front_3.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece>room1_3</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_4.png,Dungeon Lords_Image_Room_Year1_Player1_Front_4.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece count="2">room1_4</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_5.png,Dungeon Lords_Image_Room_Year1_Player1_Front_5.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece>room1_5</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year1_Distant_Back.png,Dungeon Lords_Image_Room_Year1_Orders_6.png,Dungeon Lords_Image_Room_Year1_Player1_Front_6.png,Dungeon Lords_Image_Room_Year1_Player1_Back.png">
+              <piece>room1_6</piece>
+            </sides>
+          </initial_location>
+        </piece_type>
+        <piece_type type="room2">
+          <initial_location name="location_distant_roomdraw_year2">
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_1.png,Dungeon Lords_Image_Room_Year2_Player1_Front_1.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_1</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_2.png,Dungeon Lords_Image_Room_Year2_Player1_Front_2.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_2</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_3.png,Dungeon Lords_Image_Room_Year2_Player1_Front_3.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_3</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_4.png,Dungeon Lords_Image_Room_Year2_Player1_Front_4.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_4</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_5.png,Dungeon Lords_Image_Room_Year2_Player1_Front_5.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_5</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_6.png,Dungeon Lords_Image_Room_Year2_Player1_Front_6.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_6</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_7.png,Dungeon Lords_Image_Room_Year2_Player1_Front_7.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_7</piece>
+            </sides>
+            <sides paths="Dungeon Lords_Image_Room_Year2_Distant_Back.png,Dungeon Lords_Image_Room_Year2_Orders_8.png,Dungeon Lords_Image_Room_Year2_Player1_Front_8.png,Dungeon Lords_Image_Room_Year2_Player1_Back.png">
+              <piece>room2_8</piece>
+            </sides>
+          </initial_location>
+        </piece_type>
+      </double_tap>
+    </single_tap>
+  </quad_tap>
+  <!-- End Room Pieces -->
+  <!-- Adventurer Pieces -->
+  <quad_tap action="shuffle_location" args="">
+    <triple_tap action="send_to_back">
+      <piece_type type="paladin">
+        <initial_location name="location_distant_paladin">
+          <sides paths="Dungeon Lords_Image_Adventurer_Distant_Year2_Paladin.png,Dungeon Lords_Image_Adventurer_Player1_Year2_Paladin.png">
+            <piece>pal2</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Distant_Year1_Paladin.png,Dungeon Lords_Image_Adventurer_Player1_Year1_Paladin.png">
+            <piece>pal1</piece>
+          </sides>
+        </initial_location>
+      </piece_type>
+      <piece_type type="adventurer1">
+        <initial_location name="location_distant_adventurerdraw_year1">
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_1.png,Dungeon Lords_Image_Adventurer_Player1_Year1_1.png">
+            <piece>adv1a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_2.png,Dungeon Lords_Image_Adventurer_Player1_Year1_2.png">
+            <piece>adv2a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_3.png,Dungeon Lords_Image_Adventurer_Player1_Year1_3.png">
+            <piece>adv3a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_4.png,Dungeon Lords_Image_Adventurer_Player1_Year1_4.png">
+            <piece>adv4a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_5.png,Dungeon Lords_Image_Adventurer_Player1_Year1_5.png">
+            <piece>adv5a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_6.png,Dungeon Lords_Image_Adventurer_Player1_Year1_6.png">
+            <piece>adv6a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_7.png,Dungeon Lords_Image_Adventurer_Player1_Year1_7.png">
+            <piece>adv7a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_8.png,Dungeon Lords_Image_Adventurer_Player1_Year1_8.png">
+            <piece>adv8a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_9.png,Dungeon Lords_Image_Adventurer_Player1_Year1_9.png">
+            <piece>adv9a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_10.png,Dungeon Lords_Image_Adventurer_Player1_Year1_10.png">
+            <piece>adv10a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_11.png,Dungeon Lords_Image_Adventurer_Player1_Year1_11.png">
+            <piece>adv11a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_12.png,Dungeon Lords_Image_Adventurer_Player1_Year1_12.png">
+            <piece>adv12a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_13.png,Dungeon Lords_Image_Adventurer_Player1_Year1_13.png">
+            <piece>adv13a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_14.png,Dungeon Lords_Image_Adventurer_Player1_Year1_14.png">
+            <piece>adv14a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_15.png,Dungeon Lords_Image_Adventurer_Player1_Year1_15.png">
+            <piece>adv15a</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year1_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year1_16.png,Dungeon Lords_Image_Adventurer_Player1_Year1_16.png">
+            <piece>adv16a</piece>
+          </sides>
+        </initial_location>
+      </piece_type>
+      <piece_type type="adventurer2">
+        <initial_location name="location_distant_adventurerdraw_year2">
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_1.png,Dungeon Lords_Image_Adventurer_Player1_Year2_1.png">
+            <piece>adv1b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_2.png,Dungeon Lords_Image_Adventurer_Player1_Year2_2.png">
+            <piece>adv2b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_3.png,Dungeon Lords_Image_Adventurer_Player1_Year2_3.png">
+            <piece>adv3b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_4.png,Dungeon Lords_Image_Adventurer_Player1_Year2_4.png">
+            <piece>adv4b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_5.png,Dungeon Lords_Image_Adventurer_Player1_Year2_5.png">
+            <piece>adv5b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_6.png,Dungeon Lords_Image_Adventurer_Player1_Year2_6.png">
+            <piece>adv6b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_7.png,Dungeon Lords_Image_Adventurer_Player1_Year2_7.png">
+            <piece>adv7b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_8.png,Dungeon Lords_Image_Adventurer_Player1_Year2_8.png">
+            <piece>adv8b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_9.png,Dungeon Lords_Image_Adventurer_Player1_Year2_9.png">
+            <piece>adv9b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_10.png,Dungeon Lords_Image_Adventurer_Player1_Year2_10.png">
+            <piece>adv10b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_11.png,Dungeon Lords_Image_Adventurer_Player1_Year2_11.png">
+            <piece>adv11b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_12.png,Dungeon Lords_Image_Adventurer_Player1_Year2_12.png">
+            <piece>adv12b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_13.png,Dungeon Lords_Image_Adventurer_Player1_Year2_13.png">
+            <piece>adv13b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_14.png,Dungeon Lords_Image_Adventurer_Player1_Year2_14.png">
+            <piece>adv14b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_15.png,Dungeon Lords_Image_Adventurer_Player1_Year2_15.png">
+            <piece>adv15b</piece>
+          </sides>
+          <sides paths="Dungeon Lords_Image_Adventurer_Draw_Year2_Back.png,Dungeon Lords_Image_Adventurer_Progress_Year2_16.png,Dungeon Lords_Image_Adventurer_Player1_Year2_16.png">
+            <piece>adv16b</piece>
+          </sides>
+        </initial_location>
+      </piece_type>
+    </triple_tap>
+  </quad_tap>
+  <!-- End Adventurer Pieces -->
+</game>
